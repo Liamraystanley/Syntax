@@ -1,5 +1,5 @@
 <?php
-class NessaIRC {
+class AbigailIRC {
 
 	protected $socket;
 

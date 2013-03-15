@@ -1,19 +1,19 @@
 <?php
 // Server configuration
-$server["address"]="irc.freenode.net";
+$server["address"]="irc.esper.net";
 $server["port"]="6667";
 $server["password"]="";
 
 // Bot information configuration
-$user["nick"]="gluxonbot";
-$user["mode"]="gluxon.com";
+$user["nick"]="abigailbot";
+$user["mode"]="xblaze.tk";
 $user["unused"]="unused";
-$user["realname"]="sherly";
+$user["realname"]="Abigail Tech";
 $user["password"]="";
 
 // Default join channel
-$channel["name"]="#gluxon";
+$channel["name"]="#xBlaze";
 
 // Admins array
-$admins = array("~gluxon@unaffiliated/gluxon");
+$admins = array("~xblaze@unaffiliated/xblaze");
 ?>

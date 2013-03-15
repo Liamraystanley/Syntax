@@ -1,5 +1,5 @@
 <?php
-class operator extends NessaModule {
+class operator extends AbigailModule {
 
 	/**
 	 * Run a command

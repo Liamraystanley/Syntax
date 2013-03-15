@@ -1,5 +1,5 @@
 <?php
-class NessaModule extends NessaIRC {
+class AbigailModule extends AbigailIRC {
 
 	public function sanitize($string) {
 		// Remove double, extraneous whitespaces

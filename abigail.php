@@ -1,6 +1,6 @@
 <?php
 /*
-Nessa, the simple modular IRC bot
+Abigail, the simple modular IRC bot
 Copyright (C) 2012 Brandon Cheng (gluxon)
 
 This program is free software: you can redistribute it and/or modify
@@ -40,7 +40,7 @@ require("module.inc"); // Module Class
 require(SETTINGS_PATH . "/bot.inc"); // Settings
 
 // Connect to IRC
-$irc = new NessaIRC();
+$irc = new AbigailIRC();
 $irc->connect($server["address"], $server["port"]);
 
 // Import all modules
