@@ -3,7 +3,7 @@ Abigail
 
 What is this?
 -------------
-This is a modular IRC bot loosly based on [nessa](http://github.com/gluxon/nessa).
+This is a modular PHP IRC bot forked from [nessa](http://github.com/gluxon/nessa).
 
 Documentation?
 --------------
