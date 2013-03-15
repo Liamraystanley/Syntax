@@ -47,7 +47,7 @@ $irc->connect($server["address"], $server["port"]);
 $module_dir=scandir(MODULES_PATH);
 $modules=array();
 
-echo "[INFO] Abigail has been started!\n"
+echo "[INFO] Abigail has been started!\n";
 echo "##############################\n";
 echo "# LOADED MODULES:            #\n";
 echo "##############################\n";
