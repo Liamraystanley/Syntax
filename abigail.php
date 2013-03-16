@@ -30,7 +30,6 @@ ini_set('error_log', 'error_log');
 // Where is everything?
 define('INCLUDES_PATH', 'includes');
 define('SETTINGS_PATH', 'settings');
-
 define('MODULES_PATH', 'modules');
 define("MODULES_EXTENSION", ".inc");
 
@@ -47,10 +46,6 @@ $irc->connect($server["address"], $server["port"]);
 $module_dir=scandir(MODULES_PATH);
 $modules=array();
 
-echo "[INFO] Abigail has been started!\n";
-echo "##############################\n";
-echo "# LOADED MODULES:            #\n";
-echo "##############################\n";
 foreach($module_dir as $module) {
 	// Include the file if the module is a file and ends in ".inc";
 	if ( is_file(MODULES_PATH . '/' . $module) && preg_match("/^.*" . MODULES_EXTENSION . "$/i", $module) == 1 ) {
@@ -68,7 +63,6 @@ foreach($module_dir as $module) {
 		$$module->setSocket($irc->getSocket());
 	}
 }
-echo "##############################\n\n";
 
 // Send the password and user ident info
 $irc->sendPassword($user["password"]);
