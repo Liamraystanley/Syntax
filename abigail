@@ -7,7 +7,7 @@ echo ====================================
 echo How would you like to begin? Use numbers please...
 echo   1. screen - fork using screen
 echo   2. nohup - fork using nohup
-echo   3. Debug - don't fork, run in forground
+echo   3. Debug - dont fork, run in forground
 read choice
 if [ $choice = "1" ]; then
 screen php abigail.php
