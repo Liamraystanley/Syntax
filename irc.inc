@@ -111,7 +111,7 @@ class AbigailIRC {
 	 * @param mixed $channel Channel
 	 */
 	public function joinChannel($channel) {
-		$this->sendData("JOIN $channel");
+		$this->sendData("JOIN :$channel");
 	}
 
 	/**
@@ -120,7 +120,7 @@ class AbigailIRC {
 	 * @param mixed $channel Channel
 	 */
 	public function partChannel($channel) {
-		$this->sendData("PART $channel");
+		$this->sendData("PART :$channel");
 	}
 
 	/**

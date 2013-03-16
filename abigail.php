@@ -68,9 +68,6 @@ foreach($module_dir as $module) {
 	}
 }
 
-// Join the default channel
-$irc->joinChannel($channel["name"]);
-
 // Continously read new lines
 while (true) {
 
@@ -97,6 +94,7 @@ while (true) {
 			}
 		}
 	}
-
+// Join the default channel
+$irc->joinChannel($channel["name"]);
 }
 ?>

@@ -5,15 +5,15 @@ $server["port"]="6667";
 $server["password"]="";
 
 // Bot information configuration
-$user["nick"]="abigailbot";
-$user["mode"]="xblaze.tk";
+$user["nick"]="AbigailBot";
+$user["mode"]="brocrafting.net";
 $user["unused"]="unused";
-$user["realname"]="Abigail Tech";
+$user["realname"]="Abigail by BroDev";
 $user["password"]="";
 
 // Default join channel
-$channel["name"]="#xBlaze";
+$channel["name"]="#BroCrafting";
 
 // Admins array
-$admins = array("~xblaze@unaffiliated/xblaze");
+$admins = array("~user@hostname.net");
 ?>

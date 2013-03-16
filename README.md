@@ -4,7 +4,7 @@ Abigail - The Modular PHP IRC Bot
 What is Abigail?
 ================
 ________________
-This is a modular PHP IRC bot forked from [nessa](http://github.com/gluxon/nessa).
+This is a modular PHP IRC bot forked from [nessa](http://github.com/gluxon/nessa) developed by the BroDevs.
 
 Features
 ========
@@ -15,7 +15,7 @@ ________
 
 Current bugs
 ------------
-- doesn't want to auto join channels (you have to PM it to join it.)
+- (FIXED!) doesn't want to auto join channels (you have to PM it to join it.)
 
 Documentation
 =============
