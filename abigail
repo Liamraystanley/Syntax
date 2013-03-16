@@ -1,13 +1,13 @@
 =!/bin/bash
 echo This way of starting abigail is still under development.
 echo ====================================
-echo =       Welcome to Abigail!        =
-echo =       Developed by BroDev        =
+echo =-------Welcome to Abigail!--------=
+echo =-------Developed by BroDev--------=
 echo ====================================
 echo How would you like to begin? Use numbers please...
-echo   1. screen (fork using screen)
-echo   2. nohup (fork using nohup)
-echo   3. Debug (don't fork, run in forground)
+echo   1. screen - fork using screen
+echo   2. nohup - fork using nohup
+echo   3. Debug - don't fork, run in forground
 read choice
 if [ $choice = "1" ]; then
 screen php abigail.php
