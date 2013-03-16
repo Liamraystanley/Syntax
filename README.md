@@ -13,6 +13,10 @@ ________
 - Modular - Interchangeable, and easy to addon.
 - Multi-OS - Can be run on many operating systems, including linux, mac, and windows.
 
+Current bugs
+------------
+- doesn't want to auto join channels (you have to PM it to join it.)
+
 Documentation
 =============
 _____________
