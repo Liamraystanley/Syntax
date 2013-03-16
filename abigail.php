@@ -42,6 +42,10 @@ require(SETTINGS_PATH . "/bot.inc"); // Settings
 $irc = new AbigailIRC();
 $irc->connect($server["address"], $server["port"]);
 
+// Send the password and user ident info
+$irc->sendPassword($user["password"]);
+$irc->sendIdent($user["nick"], $user["mode"], $user["unused"], $user["realname"]);
+
 // Import all modules
 $module_dir=scandir(MODULES_PATH);
 $modules=array();
@@ -63,10 +67,6 @@ foreach($module_dir as $module) {
 		$$module->setSocket($irc->getSocket());
 	}
 }
-
-// Send the password and user ident info
-$irc->sendPassword($user["password"]);
-$irc->sendIdent($user["nick"], $user["mode"], $user["unused"], $user["realname"]);
 
 // Join the default channel
 $irc->joinChannel($channel["name"]);
