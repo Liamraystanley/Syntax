@@ -1,9 +1,11 @@
 =!/bin/bash
 echo This way of starting abigail is still under development.
-echo ====================================
-echo =-------Welcome to Abigail!--------=
-echo =-------Developed by BroDev--------=
-echo ====================================
+echo ==============================================
+echo =------------Welcome to Abigail!-------------=
+echo =------------Developed by BroDev-------------=
+echo =------Copyright (C) 2013 Liam Stanley-------=
+echo =------Copyright (C) 2012 Brandon Cheng------=
+echo ==============================================
 echo How would you like to begin? Use numbers please...
 echo   1. screen - fork using screen
 echo   2. nohup - fork using nohup

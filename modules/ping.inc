@@ -7,13 +7,13 @@
 
 define('PING_LIST', 'ping_list');
 
-class paping extends AbigailModule {
+class ping extends AbigailModule {
 
 	private $ping;
 	private $ping_file;
 
 	public function __construct() {
-		$this->ping_file = SETTINGS_PATH . '/paping/' . PING_LIST;
+		$this->ping_file = SETTINGS_PATH . '/ping/' . PING_LIST;
 		if (file_exists($this->ping_file)) {
 			$this->ping = explode(',', file_get_contents($this->ping_file) );
 		} else {
@@ -39,15 +39,15 @@ class paping extends AbigailModule {
 			$send = $recipient;
 		}
 
-		if (strtolower($command) == ".help") {
+		if (strtolower($command) == ".pinghelp") {
 			$this->say($send, $nick. ": Hi! I'm pabot. I'm used to ping people when a user " .
-					"looking for help arrives. Use .add or .remove to add or remove yourself from " .
+					"looking for help arrives. Use .pingadd or .pingremove to add or remove yourself from " .
 					"the ping list.");
 		}
 
-		else if (strtolower($command) == ".add") {
+		else if (strtolower($command) == ".pingadd") {
 			if (in_array($nick, $this->ping)) {
-				$this->commands($recipient, ".remove", $nick, $host);
+				$this->commands($recipient, ".pingremove", $nick, $host);
 			} else {
 				array_push($this->ping, $nick);
 				$this->say($send, $nick . ": You have been added to the ping list. Whenever " .
@@ -56,7 +56,7 @@ class paping extends AbigailModule {
 			}
 		}
 
-		else if (strtolower($command) == ".remove") {
+		else if (strtolower($command) == ".pingremove") {
 
 			if (in_array($nick, $this->ping)) {
 				unset($this->ping[array_search($nick, $this->ping)]);
@@ -79,19 +79,19 @@ class paping extends AbigailModule {
 
 	public function ping($nick) {
 		foreach($this->ping as $person) {
-			$this->notice($person, "\002$nick\002 has joined #portableapps");
+			$this->notice($person, "\002$nick\002 has joined #BroCrafting");
 		}
 	}
 
 	public function pingHelp($nick) {
 		foreach($this->ping as $person) {
-			$this->notice($person, "\002$nick\002 called for help in #portableapps");
+			$this->notice($person, "\002$nick\002 called for help in #BroCrafting");
 		}
 	}
 
 	public function updateFile() {
 		if (!file_exists($this->ping_file)) {
-			mkdir(SETTINGS_PATH . '/paping');
+			mkdir(SETTINGS_PATH . '/ping');
 		}
 		file_put_contents($this->ping_file, implode(',', $this->ping) );
 	}
@@ -132,9 +132,9 @@ class paping extends AbigailModule {
 			case 'JOIN':
 				$recipient = $data["2"];
 
-				if (preg_match("/pa_\d{4,4}$/i", $nick) == 1) {
+				if (preg_match("/webuser_\d{4,4}$/i", $nick) == 1) {
 					$this->ping($nick);
-					$this->say("#portableapps", 'Hi ' . $nick . '! Welcome to the PortableApps.com '.
+					$this->say("#BroCrafting", 'Hi ' . $nick . '! Welcome to the BroCrafting '.
 							'IRC channel. Please ask your question and someone should be with you shortly. '. 
 							'If you do not receive an answer wait a bit longer or consider posting '. 
 							'it on the forums.');

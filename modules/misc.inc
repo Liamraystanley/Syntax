@@ -1,5 +1,5 @@
 <?php
-class lollygagging extends AbigailModule {
+class misc extends AbigailModule {
 
 	/**
 	 * Run a command

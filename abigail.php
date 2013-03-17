@@ -1,7 +1,7 @@
 <?php
 /*
-Abigail, the simple modular IRC bot
-Copyright (C) 2012 Brandon Cheng (gluxon)
+Copyright (C) 2012 Brandon Cheng
+Abigail Copyright (C) 2013 Liam Stanley (More info here: http://liamstanley.net/gpl)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -14,7 +14,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+along with this program.  If not, see http://www.gnu.org/licenses/.
 */
 
 // Stop PHP from killing itself in 30 seconds

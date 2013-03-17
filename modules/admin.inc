@@ -1,5 +1,5 @@
 <?php
-class operator extends AbigailModule {
+class admin extends AbigailModule {
 
 	/**
 	 * Run a command
