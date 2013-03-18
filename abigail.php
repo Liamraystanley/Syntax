@@ -1,6 +1,7 @@
 <?php
 /*
-Copyright (C) 2012 Brandon Cheng
+Nessa Copyright (C) 2012 Brandon Cheng
+Abigail Copyright (C) 2013 Lansing Nye-Madden
 Abigail Copyright (C) 2013 Liam Stanley (More info here: http://liamstanley.net/gpl)
 
 This program is free software: you can redistribute it and/or modify
