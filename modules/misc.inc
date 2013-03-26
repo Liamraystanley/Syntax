@@ -1,5 +1,5 @@
 <?php
-class misc extends AbigailModule {
+class misc extends SyntaxModule {
 
 	/**
 	 * Run a command

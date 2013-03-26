@@ -1,5 +1,5 @@
 <?php
-class AbigailModule extends AbigailIRC {
+class SyntaxModule extends SyntaxIRC {
 
 	public function sanitize($string) {
 		// Remove double, extraneous whitespaces

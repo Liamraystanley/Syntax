@@ -1,5 +1,5 @@
 <?php
-class admin extends AbigailModule {
+class admin extends SyntaxModule {
 
 	/**
 	 * Run a command

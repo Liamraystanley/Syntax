@@ -7,7 +7,7 @@
 
 define('PING_LIST', 'ping_list');
 
-class ping extends AbigailModule {
+class ping extends SyntaxModule {
 
 	private $ping;
 	private $ping_file;
@@ -40,7 +40,7 @@ class ping extends AbigailModule {
 		}
 
 		if (strtolower($command) == ".pinghelp") {
-			$this->say($send, $nick. ": Hi! I'm pabot. I'm used to ping people when a user " .
+			$this->say($send, $nick. ": Hi! I'm Syntax. I'm used to ping people when a user " .
 					"looking for help arrives. Use .pingadd or .pingremove to add or remove yourself from " .
 					"the ping list.");
 		}
@@ -79,13 +79,13 @@ class ping extends AbigailModule {
 
 	public function ping($nick) {
 		foreach($this->ping as $person) {
-			$this->notice($person, "\002$nick\002 has joined #BroCrafting");
+			$this->notice($person, "\002$nick\002 has joined #L");
 		}
 	}
 
 	public function pingHelp($nick) {
 		foreach($this->ping as $person) {
-			$this->notice($person, "\002$nick\002 called for help in #BroCrafting");
+			$this->notice($person, "\002$nick\002 called for help in #L");
 		}
 	}
 
@@ -134,7 +134,7 @@ class ping extends AbigailModule {
 
 				if (preg_match("/webuser_\d{4,4}$/i", $nick) == 1) {
 					$this->ping($nick);
-					$this->say("#BroCrafting", 'Hi ' . $nick . '! Welcome to the BroCrafting '.
+					$this->say("#BroCrafting", 'Hi ' . $nick . '! Welcome to the #L'.
 							'IRC channel. Please ask your question and someone should be with you shortly. '. 
 							'If you do not receive an answer wait a bit longer or consider posting '. 
 							'it on the forums.');

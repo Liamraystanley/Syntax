@@ -1,12 +1,11 @@
 @echo off
-title Abigail PHP IRC Bot
+title Syntax PHP IRC Bot
 MODE CON: COLS=120 LINES=45
 goto start
 :start
 color 07
 cls
-echo Copyright (C) 2012 Brandon Cheng
-echo Abigail Copyright (C) 2013 Liam Stanley
+echo Syntax Copyright (C) 2013 Liam Stanley
 echo.
 echo This program is free software: you can redistribute it and/or modify
 echo it under the terms of the GNU General Public License as published by
@@ -21,21 +20,21 @@ echo.
 echo.
 choice /c yn /n /d y /t 3 > nul
 cls
-echo Starting Abigail...
+echo Starting Syntax...
 choice /c yn /n /d y /t 1 > nul
 cls
-echo MAKE SURE YOU EDITED ABIGAILS CONFIG!
+echo MAKE SURE YOU EDITED SYNTAX'S CONFIG!
 choice /c yn /n /d y /t 1 > nul
 cls
-php abigail.php || goto failed
-echo Successfully started Abigail!
+php syntax.php || goto failed
+echo Successfully started Syntax!
 goto success
 :failed
 color 04
-echo Oh no! There was an error when starting Abigail!
+echo Oh no! There was an error when starting Syntax!
 echo have you added PHP to your path environment variable?
 echo (if not, goto our Git-Hub page for a how-to)
-echo press anything to try and start Abigail again...
+echo press anything to try and start Syntax again...
 :success
 pause > nul
 cls

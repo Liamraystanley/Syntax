@@ -1,5 +1,5 @@
 <?php
-class AbigailIRC {
+class SyntaxIRC {
 
 	protected $socket;
 
