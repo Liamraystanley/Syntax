@@ -1,4 +1,4 @@
-Syntax - The Modular PHP IRC Bot
+Syntax -- The Modular PHP IRC Bot
 =================================
 
 What is Syntax?
