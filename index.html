@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Syntax by Liamraystanley</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/Liamraystanley/Syntax">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/Liamraystanley/Syntax/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/Liamraystanley/Syntax/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Syntax</h1>
+          <p>A modular PHP IRC bot.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/Liamraystanley">Liamraystanley</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>Abigail - The Modular PHP IRC Bot</h1>
+
+<h1>What is Abigail?</h1>
+
+<hr><p>This is a modular PHP IRC bot forked from <a href="http://github.com/gluxon/nessa">nessa</a> developed by the BroDevs.</p>
+
+<h1>Features</h1>
+
+<hr><ul>
+<li>PHP based, Which is highly configureable.</li>
+<li>Modular - Interchangeable, and easy to addon.</li>
+<li>Multi-OS - Can be run on many operating systems, including linux, mac, and windows.</li>
+</ul><h2>Current bugs</h2>
+
+<ul>
+<li>(FIXED!) doesn't want to auto join channels (you have to PM it to join it.)</li>
+</ul><h1>Documentation</h1>
+
+<hr><p>The documentation for Abigail is a work in progress. If you'd like to contribute feel free to fork Abigail and request a source merge.
+If you'd like to discuss forks from this project or know what a module does, feel free to tap into our IRC channel #xBlaze on irc.esper.net:6667.</p>
+
+<h1>Download</h1>
+
+<hr><p>To install Abigail, you may require a few packages.
+<a href="https://github.com/xBlazeTECH/abigail/archive/master.zip">Abigail</a> (obviously, it's the core)
+<a href="http://us.php.net/downloads.php">PHP5</a> (highly recommended, PHP 4+ required).
+nohup (for ability to fork into background, whould be in your linux distro package by default).
+screen (for ability to fork into background, and reattach at a later time).</p>
+
+<ul>
+<li>usually have to install, via "apt-get install screen", "yum install screen", or the default distrobution package manager.</li>
+</ul><h1>Installation</h1>
+
+<hr><h2>Linux</h2>
+
+<hr><p>to install Abigail on linux, make sure to have a way to fork Abigail into the background (READ ABOVE).
+download the abigail using the link above (if using a GUI linux). if you are using UNIX, or a unix based server, use <code>wget</code> to download the package.</p>
+
+<pre><code>mkdir abigail
+cd abigail
+wget https://github.com/xBlazeTECH/abigail/archive/master.zip
+</code></pre>
+
+<p>now, unzip the archive to the <code>abigail</code> directory</p>
+
+<pre><code>unzip master.zip
+</code></pre>
+
+<h2>Windows</h2>
+
+<hr><p>to install Abigail on Windows, make sure you have abigail downloaded and you have PHP added to the environment path. use <a href="http://www.php.net/manual/en/faq.installation.php#faq.installation.addtopath">this</a> method.
+download the abigail using the link in the downloads section.</p>
+
+<h1>Configuration</h1>
+
+<hr><h2>Linux</h2>
+
+<hr><p>to configure Abigail for the first time on a linux OS, you must first edit the bot.inc file. make sure you are in the <code>abigail</code> directory.</p>
+
+<pre><code>cd abigail (or what ever directory you unzipped abigail to)
+</code></pre>
+
+<p>now, you must copy the <code>bot_example.inc</code> file and rename the copied version to <code>bot.inc</code>. you must have a text editor installed on your linux/unix box, or direct FTP access to the file. common text editors would include <code>vi</code> or <code>vim</code>, <code>nano</code>, <code>emacs</code>, or your favorite text/source editor.</p>
+
+<pre><code>cd settings (make sure you are in the abigail directory before you do this)
+cp bot_example.inc bot.inc
+edit bot.inc (or vi bot.inc, nano bot.inc, etc)
+</code></pre>
+
+<p>make sure you check and recheck every setting, once you are done configuring, feel free to head to the Running Abigail section.</p>
+
+<h2>Windows</h2>
+
+<hr><p>to configure Abigail on windows for the first time, just go into the <code>/abigail/settings/</code> directory and find <code>bot_example.inc</code>.
+copy that file and rename the copied version of the file to <code>bot.inc</code>, and edit  the file.</p>
+
+<ul>
+<li>Be advised, the windows notepad tends to fuck up some text-based files, so i'd recommend using notepad++. once you are done, save it, and head down to the Running Abigail, in hte windows section.</li>
+</ul><h1>Running Abigail</h1>
+
+<hr><h2>Linux</h2>
+
+<hr><p>to run Abigail, on linux, there are a few different methods.</p>
+
+<h2>Screen - multiscreen terminal tool</h2>
+
+<pre><code>screen (hit enter twice once you type this command)
+php abigail.php
+</code></pre>
+
+<p>now, to close safely just press <code>CTRL+A</code> then <code>CTRL+D</code>. then you can exit terminal, or SSH safely :D.</p>
+
+<ul>
+<li>To get back to that screen, in terminal type <code>screen -r</code>.</li>
+</ul><h2>Nohup - background process forker</h2>
+
+<pre><code>nohup php abigail.php &amp;
+</code></pre>
+
+<p>it should push all stdout and all error messages to nohup.out. to forcefully stop a nohup process, you can kill the process with <code>killall -9 php</code>. WARNING this will kill any other process running with php.</p>
+
+<h2>Executeable bash script</h2>
+
+<p>Abigail has another useful tool. the executeable bash script.
+to use this just go to the <code>abigail</code> directory, and make it executeable, do this command:</p>
+
+<pre><code>cd abigail (or directory that you stored abigail)
+chmod +x abigail
+./abigail
+</code></pre>
+
+<p>this should bring up a prompt asking you to use screen, nohup, or just run without forking into background.</p>
+
+<h2>Windows</h2>
+
+<hr><p>if you added PHP to your <code>$PATH</code> environment variable, then you can just double click and run abigail.bat, which is a windows DOS version command-prompt.</p>
+
+<p>if you did not, or do not know how to add it to your <code>$PATH</code> variable, then you have to navigate to the default PHP install directory in command-prompt and run Abigail from there. i.e:</p>
+
+<pre><code>C:/path/to/php abigail.php
+</code></pre>
+
+<p>Abigail Copyright (C) 2013 Liam Stanley (More info here: <a href="http://liamstanley.net/gpl">http://liamstanley.net/gpl</a>)</p>
+
+<pre><code>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+</code></pre>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
