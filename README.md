@@ -2,8 +2,8 @@ Syntax - The Modular PHP IRC Bot
 =================================
 
 What is Syntax?
-================
-________________
+===============
+_______________
 This is a modular PHP IRC bot forked from [nessa](http://github.com/gluxon/nessa) developed by the Liam Stanley.
 
 Features
