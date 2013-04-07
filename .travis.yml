@@ -1,8 +1,0 @@
-language: php
-notifications:
-  irc: "irc.esper.net#L"
-php:
-  - "5.5"
-  - "5.4"
-  - "5.3"
-script: php syntax.php
