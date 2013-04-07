@@ -71,7 +71,6 @@ to configure Syntax for the first time on a linux OS, you must first edit the bo
 now, you must copy the `bot_example.inc` file and rename the copied version to `bot.inc`. you must have a text editor installed on your linux/unix box, or direct FTP access to the file. common text editors would include `vi` or `vim`, `nano`, `emacs`, or your favorite text/source editor.
 
     cd settings (make sure you are in the syntax directory before you do this)
-	cp bot_example.inc bot.inc
 	edit bot.inc (or vi bot.inc, nano bot.inc, etc)
 
 make sure you check and recheck every setting, once you are done configuring, feel free to head to the Running Syntax section.
