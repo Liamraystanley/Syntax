@@ -29,14 +29,14 @@ ini_set('error_log', 'error_log');
 
 // Where is everything?
 define('INCLUDES_PATH', 'includes');
-define('SETTINGS_PATH', 'settings');
+define('CONFIG_PATH', 'config');
 define('MODULES_PATH', 'modules');
 define("MODULES_EXTENSION", ".inc");
 
 require("irc.inc"); // IRC Class
 require("module.inc"); // Module Class
 
-require(SETTINGS_PATH . "/bot.inc"); // Settings
+require(CONFIG_PATH . "/bot.inc"); // config
 
 // Connect to IRC
 $irc = new SyntaxIRC();

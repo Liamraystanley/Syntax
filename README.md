@@ -70,7 +70,7 @@ to configure Syntax for the first time on a linux OS, you must first edit the bo
 
 now, you must have a text editor installed on your linux/unix box so you can edit the bot file, or direct FTP access to the file. common text editors would include `vi` or `vim`, `nano`, `emacs`, or your favorite text/source editor.
 
-    cd settings (make sure you are in the syntax directory before you do this)
+    cd config (make sure you are in the syntax directory before you do this)
 	edit bot.inc (or vi bot.inc, nano bot.inc, etc)
 
 make sure you check and recheck every setting, once you are done configuring, feel free to head to the Running Syntax section.
@@ -79,7 +79,7 @@ Windows
 -------
 _______
 
-to configure Syntax on windows for the first time, just go into the `/syntax/settings/` directory and find `bot.inc`, and edit  the file.
+to configure Syntax on windows for the first time, just go into the `/syntax/config/` directory and find `bot.inc`, and edit  the file.
 - Be advised, the windows notepad tends to fuck up some text-based files, so i'd recommend using notepad++. once you are done, save it, and head down to the Running Syntax, in hte windows section.
 
 
