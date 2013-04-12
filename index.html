@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Syntax : A modular PHP IRC bot." />
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Syntax by Liamraystanley</title>
+    <title>Syntax</title>
   </head>
 
   <body>
-    <header>
-      <div class="inner">
-        <h1>Syntax</h1>
-        <h2>A modular PHP IRC bot.</h2>
-        <a href="https://github.com/Liamraystanley/Syntax" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>Syntax -- The Modular PHP IRC Bot</h1>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Liamraystanley/Syntax">View on GitHub</a>
+
+          <h1 id="project_title">Syntax</h1>
+          <h2 id="project_tagline">A modular PHP IRC bot.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Liamraystanley/Syntax/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Liamraystanley/Syntax/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Syntax -- The Modular PHP IRC Bot</h1>
 
 <h1>What is Syntax?</h1>
 
@@ -86,10 +89,9 @@ download the syntax using the link in the downloads section.</p>
 <pre><code>cd syntax (or what ever directory you unzipped syntax to)
 </code></pre>
 
-<p>now, you must copy the <code>bot_example.inc</code> file and rename the copied version to <code>bot.inc</code>. you must have a text editor installed on your linux/unix box, or direct FTP access to the file. common text editors would include <code>vi</code> or <code>vim</code>, <code>nano</code>, <code>emacs</code>, or your favorite text/source editor.</p>
+<p>now, you must have a text editor installed on your linux/unix box so you can edit the bot file, or direct FTP access to the file. common text editors would include <code>vi</code> or <code>vim</code>, <code>nano</code>, <code>emacs</code>, or your favorite text/source editor.</p>
 
-<pre><code>cd settings (make sure you are in the syntax directory before you do this)
-cp bot_example.inc bot.inc
+<pre><code>cd config (make sure you are in the syntax directory before you do this)
 edit bot.inc (or vi bot.inc, nano bot.inc, etc)
 </code></pre>
 
@@ -97,8 +99,7 @@ edit bot.inc (or vi bot.inc, nano bot.inc, etc)
 
 <h2>Windows</h2>
 
-<hr><p>to configure Syntax on windows for the first time, just go into the <code>/syntax/settings/</code> directory and find <code>bot_example.inc</code>.
-copy that file and rename the copied version of the file to <code>bot.inc</code>, and edit  the file.</p>
+<hr><p>to configure Syntax on windows for the first time, just go into the <code>/syntax/config/</code> directory and find <code>bot.inc</code>, and edit  the file.</p>
 
 <ul>
 <li>Be advised, the windows notepad tends to fuck up some text-based files, so i'd recommend using notepad++. once you are done, save it, and head down to the Running Syntax, in hte windows section.</li>
@@ -161,25 +162,18 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
 </code></pre>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/Liamraystanley/Syntax/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/Liamraystanley/Syntax/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/Liamraystanley/Syntax"></a> is maintained by <a href="https://github.com/Liamraystanley">Liamraystanley</a>.</p>
-
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+      </section>
     </div>
 
-  
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Syntax maintained by <a href="https://github.com/Liamraystanley">Liamraystanley</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
   </body>
 </html>
