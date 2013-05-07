@@ -10,9 +10,9 @@ echo   2. nohup - fork using nohup
 echo   3. Debug - dont fork, run in forground
 read choice
 if [ $choice = "1" ]; then
-screen php syntax.php
+{ "screen php syntax.php" }
 elif [ $choice = "2" ]; then
-nohup php syntax.php &
+{ "nohup php syntax.php &" }
 else
 php syntax.php
 fi

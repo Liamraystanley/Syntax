@@ -1,0 +1,17 @@
+#/bin/bash
+echo "------------------------------------------------------"
+echo "        Syntax Copyright Liam Stanley 2012-2013       "
+echo "      Debugging Syntax is still under development.    "
+echo "         -----------------------------------          "
+echo "     If you get PHP not found errors, add PHP to      "
+echo "Your $PATH variable, or edit this file to point to it."
+echo "------------------------------------------------------"
+echo "-------------------------------------------------"
+echo "Syntax checking all files in $PWD starting now..."
+echo "-------------------------------------------------"
+find . -name \*.php -exec php -l "{}" \; || { echo 'Syntax Checking method failed...' ; exit 1; }
+find . -name \*.inc -exec php -l "{}" \; || { echo 'Syntax Checking method failed...' ; exit 1; }
+echo "-------------------------------------------"
+echo "If no errors resided, then were good to go!"
+echo "-------------------------------------------"
+# EOF
