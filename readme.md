@@ -22,6 +22,8 @@ If you'd like to discuss forks from this project or know what a module does, fee
 Download
 ========
 ________
+Build Status: [![Build Status](http://build.liamstanley.net/job/Syntax/badge/icon)](http://build.liamstanley.net/job/Syntax/)
+
 To install Syntax, you may require a few packages.
 [Syntax](https://github.com/liamraystanley/Syntax/archive/master.zip) (obviously, it's the core)
 [PHP5](http://us.php.net/downloads.php) (highly recommended, PHP 4+ required).
