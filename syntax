@@ -1,18 +1,18 @@
-=!/bin/bash
+#!/bin/bash
 echo This way of starting syntax is still under development.
 echo ==============================================
 echo =------------Welcome to Syntax!-------------=
 echo =------Copyright \(C\) 2013 Liam Stanley-------=
 echo ==============================================
 echo How would you like to begin? Please type the number below.
-echo   1. screen - fork using screen
-echo   2. nohup - fork using nohup
-echo   3. Debug - dont fork, run in forground
+echo   1. screen - fork using screen \(Exit with CTRL+A then CTRL+D\)
+echo   2. Resume screen session
+echo   3. Debug - run in foreground
 read choice
 if [ $choice = "1" ]; then
-{ "screen php syntax.php" }
+  screen -t Syntax -S syntax php syntax.php
 elif [ $choice = "2" ]; then
-{ "nohup php syntax.php &" }
+  screen -x syntax
 else
-php syntax.php
+  php syntax.php
 fi
