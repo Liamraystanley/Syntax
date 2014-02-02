@@ -1,7 +1,7 @@
 <?php
 /*
 Nessa Copyright (C) 2012 Brandon Cheng
-Syntax Copyright (C) 2013 Liam Stanley (More info here: http://liamstanley.net/gpl)
+Syntax Copyright (C) 2013 Liam Stanley (More info here: http://liamstanley.io/gpl)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

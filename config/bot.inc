@@ -6,7 +6,7 @@ $server["password"]="";
 
 // Bot information configuration
 $user["nick"]="Syntax-Bot";
-$user["mode"]="liamstanley.net";
+$user["mode"]="liamstanley.io";
 $user["unused"]="unused";
 $user["realname"]="Syntax by Liam Stanley";
 $user["password"]="";

@@ -22,7 +22,7 @@ If you'd like to discuss forks from this project or know what a module does, fee
 Download
 ========
 ________
-Build Status: [![Build Status](http://build.liamstanley.net/job/Syntax/badge/icon)](http://build.liamstanley.net/job/Syntax/)
+Build Status: [![Build Status](http://build.liamstanley.io/job/Syntax/badge/icon)](http://build.liamstanley.io/job/Syntax/)
 
 To install Syntax, you may require a few packages.
 [Syntax](https://github.com/liamraystanley/Syntax/archive/master.zip) (obviously, it's the core)
@@ -132,7 +132,7 @@ if you did not, or do not know how to add it to your `$PATH` variable, then you 
 
     C:/path/to/php syntax.php
 
-Syntax Copyright (C) 2013 Liam Stanley (More info here: http://liamstanley.net/gpl)
+Syntax Copyright (C) 2013 Liam Stanley (More info here: http://liamstanley.io/gpl)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
