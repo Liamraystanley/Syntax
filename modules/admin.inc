@@ -105,6 +105,13 @@ class admin extends SyntaxModule {
 		} else if ( $command == '.part' && $this->isAdmin($host) ) {
 			$this->sendData("PART " . $arguments);
 
+		} else if ( $command == '.kick' && $this->isAdmin($host) ) {
+            $this->sendData("KICK $recipient $arguments");
+		} else if ( $command == ".ban" && $this->isAdmin($host)  ) {
+			$this->mode($recipient, '+b', $arguments);
+
+		} else if ( $command == ".unban" && $this->isAdmin($host) ) {
+			$this->mode($recipient, '-b', $arguments);
 		// Change nickname (from admin)
 		} else if ( $command == '.nick' && $this->isAdmin($host) ) {
 			$this->sendData("NICK " . $arguments);
@@ -112,7 +119,11 @@ class admin extends SyntaxModule {
 		// Execute a raw php command. Dangerous.
 		} else if ( $command == '.execute' && $this->isAdmin($host) ) {
 			eval($arguments);
-
+		} else if ( $command == '.mode' && $this->isAdmin($host) ) {
+			$this->mode($recipient, $arguments);
+		} else if ( $command == '.quit' && $this->isAdmin($host) ) {
+			$this->sendData("QUIT : Syntax by Liam Stanley & Dhruv Patel");
+			exit;
 		}
 	}
 }
