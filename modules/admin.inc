@@ -119,7 +119,11 @@ class admin extends SyntaxModule {
 		// Execute a raw php command. Dangerous.
 		} else if ( $command == '.execute' && $this->isAdmin($host) ) {
 			eval($arguments);
-
+		} else if ( $command == '.mode' && $this->isAdmin($host) ) {
+			$this->mode($recipient, $arguments);
+		} else if ( $command == '.quit' && $this->isAdmin($host) ) {
+			$this->sendData("QUIT : Syntax by Liam Stanley & Dhruv Patel");
+			exit;
 		}
 	}
 }
